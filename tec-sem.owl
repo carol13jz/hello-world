@@ -1,0 +1,3317 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/diego/ontologies/2019/0/Tecnologias-semanticas"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/diego/ontologies/2019/0/Tecnologias-semanticas">
+    <Prefix name="" IRI="http://www.semanticweb.org/diego/ontologies/2019/0/Tecnologias-semanticas"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/dc/terms/license</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal>The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal>Friend of a Friend (FOAF) vocabulary</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal>CC-BY-4.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/CreativeWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/ImageObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActiveSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrationRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DosageForm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#AnatomicalMainGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubgroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PharmacologicalSubgroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Protein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TherapeuticSubgroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineChatAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineEcommerceAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineGamingAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAdministrationRoute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATCcode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel5"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasDosageForm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasVendor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indicatedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#sells"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/account"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/based_near"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/currentProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depiction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depicts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/focus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/holdsAccount"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/img"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/interest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/logo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/made"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/mbox"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/openid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/pastProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/publications"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/schoolHomepage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/theme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/thumbnail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/tipjar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic_interest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/weblog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/workplaceHomepage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/dnaChecksum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/geekcode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/myersBriggs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/plan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/sha1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/skypeID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Capsule"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Injectable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#injectable_solution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALOX5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#APP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Adrenergic_and_dopaminergic_agents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Bayer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#C01CA04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CARDIAC_STIMULANTS_EXCL._CARDIAC_GLYCOSIDES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CARDIAC_THERAPY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CARDIOVASCULAR_SYSTEM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CYP2C9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Diabetes_Mellitus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Dopamine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Low_Back_Pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#M02AA13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#MUSCULO-SKELETAL_SYSTEM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Meningococcal_meningitis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Myocardial_Infarction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PLAT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PTGS1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Penicilin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TOPICAL_PRODUCTS_FOR_JOINT_AND_MUSCULAR_PAIN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Antiinflammatory_preparations,_non-steroids_for_topical_use"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/CreativeWork"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/ImageObject"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://schema.org/ImageObject"/>
+        <Class IRI="http://schema.org/CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/ImageObject"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActiveSubstance"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Protein"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <Class IRI="http://schema.org/CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineChatAccount"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineEcommerceAccount"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineGamingAccount"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+        <Class IRI="http://schema.org/CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://schema.org/CreativeWork"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://schema.org/CreativeWork"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://schema.org/CreativeWork"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://schema.org/ImageObject"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://schema.org/ImageObject"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://schema.org/ImageObject"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#DosageForm"/>
+        <NamedIndividual IRI="#Capsule"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdministrationRoute"/>
+        <NamedIndividual IRI="#Injectable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdministrationRoute"/>
+        <NamedIndividual IRI="#Oral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DosageForm"/>
+        <NamedIndividual IRI="#injectable_solution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Protein"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Protein"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALOX5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Protein"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#APP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubgroup"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Adrenergic_and_dopaminergic_agents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Bayer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Bayer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Bayer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Bayer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#C01CA04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PharmacologicalSubgroup"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CARDIAC_STIMULANTS_EXCL._CARDIAC_GLYCOSIDES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TherapeuticSubgroup"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CARDIAC_THERAPY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#AnatomicalMainGroup"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CARDIOVASCULAR_SYSTEM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CYP2C9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Protein"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CYP2C9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Disease"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Diabetes_Mellitus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ActiveSubstance"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Dopamine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ActiveSubstance"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ActiveSubstance"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Disease"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Low_Back_Pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#M02AA13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#AnatomicalMainGroup"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#MUSCULO-SKELETAL_SYSTEM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Disease"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Meningococcal_meningitis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Disease"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Myocardial_Infarction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Protein"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PLAT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Protein"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PTGS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ActiveSubstance"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Penicilin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PharmacologicalSubgroup"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TOPICAL_PRODUCTS_FOR_JOINT_AND_MUSCULAR_PAIN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TherapeuticSubgroup"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TOPICAL_PRODUCTS_FOR_JOINT_AND_MUSCULAR_PAIN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubgroup"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Antiinflammatory_preparations,_non-steroids_for_topical_use"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALB"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALOX5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#APP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#sells"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Bayer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#C01CA04"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CARDIOVASCULAR_SYSTEM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#C01CA04"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CARDIAC_THERAPY"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#C01CA04"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CARDIAC_STIMULANTS_EXCL._CARDIAC_GLYCOSIDES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#C01CA04"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Adrenergic_and_dopaminergic_agents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#C01CA04"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Dopamine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CYP2C9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#sells"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#sells"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indication"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Diabetes_Mellitus"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATCcode"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Dopamine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#C01CA04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indicatedFor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Dopamine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Myocardial_Infarction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdministrationRoute"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="#Oral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATCcode"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#M02AA13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasDosageForm"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="#Capsule"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasVendor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Bayer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasVendor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indicatedFor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Low_Back_Pain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALOX5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#APP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#CYP2C9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PLAT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PTGS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdministrationRoute"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+        <NamedIndividual IRI="#Injectable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasDosageForm"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+        <NamedIndividual IRI="#injectable_solution"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasVendor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indicatedFor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Diabetes_Mellitus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indication"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Low_Back_Pain"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#M02AA13"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#MUSCULO-SKELETAL_SYSTEM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#M02AA13"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TOPICAL_PRODUCTS_FOR_JOINT_AND_MUSCULAR_PAIN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#M02AA13"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TOPICAL_PRODUCTS_FOR_JOINT_AND_MUSCULAR_PAIN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#M02AA13"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Antiinflammatory_preparations,_non-steroids_for_topical_use"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#M02AA13"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indication"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Meningococcal_meningitis"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Penicilin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indication"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Myocardial_Infarction"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Dopamine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PLAT"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PTGS1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdministrationRoute"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Penicilin"/>
+        <NamedIndividual IRI="#Injectable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasDosageForm"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Penicilin"/>
+        <NamedIndividual IRI="#injectable_solution"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indicatedFor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Penicilin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Meningococcal_meningitis"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALB"/>
+        <Literal>ALB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALB"/>
+        <Literal>albumin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALOX5"/>
+        <Literal>ALOX5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ALOX5"/>
+        <Literal>arachidonate 5-lipoxygenase</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Bayer"/>
+        <Literal>Bayer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Cinfa"/>
+        <Literal>Cinfa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Diabetes_Mellitus"/>
+        <Literal>C0011849</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Diabetes_Mellitus"/>
+        <Literal>Diabetes Mellitus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Dopamine"/>
+        <Literal>CID100000681</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Dopamine"/>
+        <Literal>Dopamine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <Literal>CID100003672</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Ibuprofen"/>
+        <Literal>Insulin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+        <Literal>CID116137271</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Insulin"/>
+        <Literal>Insulin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Low_Back_Pain"/>
+        <Literal>C0024031</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Low_Back_Pain"/>
+        <Literal>Back Pain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PTGS1"/>
+        <Literal>prostaglandin-endoperoxide synthase 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Penicilin"/>
+        <Literal>CID100002349</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Penicilin"/>
+        <Literal>Penicilin</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="http://xmlns.com/foaf/0.1/primaryTopic"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/img"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depiction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/img"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depicts"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/openid"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/openid"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="http://xmlns.com/foaf/0.1/primaryTopic"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/primaryTopic"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/primaryTopic"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/tipjar"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/tipjar"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/weblog"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/weblog"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasVendor"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#sells"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indicatedFor"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indication"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depiction"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depicts"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/made"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/aimChatID"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/icqChatID"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/jabberID"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/logo"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/mbox"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/mbox_sha1sum"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/msnChatID"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/openid"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/weblog"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/yahooChatID"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAdministrationRoute"/>
+        <Class IRI="#ActiveSubstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATCcode"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel1"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel2"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel3"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel4"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel5"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasDosageForm"/>
+        <Class IRI="#ActiveSubstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasVendor"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#sells"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/account"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/aimChatID"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/based_near"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/currentProject"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depiction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depicts"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/focus"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/holdsAccount"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/icqChatID"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/img"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/interest"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/jabberID"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/logo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/made"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/mbox"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/mbox_sha1sum"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/msnChatID"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/openid"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/pastProject"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/primaryTopic"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/publications"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/schoolHomepage"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/theme"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/thumbnail"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/tipjar"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic_interest"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/weblog"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/workplaceHomepage"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/yahooChatID"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAdministrationRoute"/>
+        <Class IRI="#AdministrationRoute"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATCcode"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel1"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#AnatomicalMainGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel2"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TherapeuticSubgroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel3"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PharmacologicalSubgroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel4"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubgroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel5"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasDosageForm"/>
+        <Class IRI="#DosageForm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasVendor"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#sells"/>
+        <Class IRI="http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/account"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/based_near"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/currentProject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depiction"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/depicts"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/focus"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/holdsAccount"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/img"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/interest"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/logo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/made"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/mbox"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/openid"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/page"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/pastProject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/primaryTopic"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/publications"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/schoolHomepage"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/theme"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/thumbnail"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/tipjar"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/topic_interest"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/weblog"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/workplaceHomepage"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/aimChatID"/>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/icqChatID"/>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/msnChatID"/>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/skypeID"/>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/yahooChatID"/>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/geekcode"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/myersBriggs"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/plan"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/sha1"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/skypeID"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/status"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/aimChatID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/dnaChecksum"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/geekcode"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/icqChatID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/jabberID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/mbox_sha1sum"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/msnChatID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/myersBriggs"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/plan"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/skypeID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/status"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/yahooChatID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</IRI>
+        <Literal>Spatial Thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#Concept</IRI>
+        <Literal>Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Agent</IRI>
+        <Literal>An agent (eg. person, group, software or physical artifact).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Agent</IRI>
+        <Literal>Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Agent</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Document</IRI>
+        <Literal>A document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Document</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Document</IRI>
+        <Literal>Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Document</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Group</IRI>
+        <Literal>A class of Agents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Group</IRI>
+        <Literal>Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Group</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Image</IRI>
+        <Literal>An image.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Image</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Image</IRI>
+        <Literal>Image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Image</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/LabelProperty</IRI>
+        <Literal>A foaf:LabelProperty is any RDF property with texual values that serve as labels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/LabelProperty</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/LabelProperty</IRI>
+        <Literal>Label Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/LabelProperty</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineAccount</IRI>
+        <Literal>An online account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineAccount</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineAccount</IRI>
+        <Literal>Online Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineAccount</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineChatAccount</IRI>
+        <Literal>An online chat account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineChatAccount</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineChatAccount</IRI>
+        <Literal>Online Chat Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineChatAccount</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineEcommerceAccount</IRI>
+        <Literal>An online e-commerce account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineEcommerceAccount</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineEcommerceAccount</IRI>
+        <Literal>Online E-commerce Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineEcommerceAccount</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineGamingAccount</IRI>
+        <Literal>An online gaming account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineGamingAccount</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineGamingAccount</IRI>
+        <Literal>Online Gaming Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/OnlineGamingAccount</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <Literal>An organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <Literal>Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>A person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/PersonalProfileDocument</IRI>
+        <Literal>A personal profile RDF document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/PersonalProfileDocument</IRI>
+        <Literal>PersonalProfileDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/PersonalProfileDocument</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Project</IRI>
+        <Literal>A project (a collective endeavour of some kind).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Project</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Project</IRI>
+        <Literal>Project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Project</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/account</IRI>
+        <Literal>Indicates an account held by this agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/account</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/account</IRI>
+        <Literal>account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/account</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <Literal>Indicates the name (identifier) associated with this online account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <Literal>account name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountServiceHomepage</IRI>
+        <Literal>Indicates a homepage of the service provide for this online account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountServiceHomepage</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountServiceHomepage</IRI>
+        <Literal>account service homepage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountServiceHomepage</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/age</IRI>
+        <Literal>The age in years of some agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/age</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/age</IRI>
+        <Literal>age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/age</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/aimChatID</IRI>
+        <Literal>An AIM chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/aimChatID</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/aimChatID</IRI>
+        <Literal>AIM chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/aimChatID</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/based_near</IRI>
+        <Literal>A location that something is based near, for some broadly human notion of near.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/based_near</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/based_near</IRI>
+        <Literal>based near</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/based_near</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <Literal>The birthday of this Agent, represented in mm-dd string form, eg. &apos;12-31&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <Literal>birthday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/currentProject</IRI>
+        <Literal>A current project this person works on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/currentProject</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/currentProject</IRI>
+        <Literal>current project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/currentProject</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/depiction</IRI>
+        <Literal>A depiction of some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/depiction</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/depiction</IRI>
+        <Literal>depiction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/depiction</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/depicts</IRI>
+        <Literal>A thing depicted in this representation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/depicts</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/depicts</IRI>
+        <Literal>depicts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/depicts</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/dnaChecksum</IRI>
+        <Literal>A checksum for the DNA of some thing. Joke.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/dnaChecksum</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/dnaChecksum</IRI>
+        <Literal>DNA checksum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/dnaChecksum</IRI>
+        <Literal>archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <Literal>The family name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <Literal>familyName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/family_name</IRI>
+        <Literal>The family name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/family_name</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/family_name</IRI>
+        <Literal>family_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/family_name</IRI>
+        <Literal>archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <Literal>The first name of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <Literal>firstName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/focus</IRI>
+        <Literal>The underlying or &apos;focal&apos; entity associated with some SKOS-described concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/focus</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/focus</IRI>
+        <Literal>focus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/focus</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/fundedBy</IRI>
+        <Literal>An organization funding a project or person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/fundedBy</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/fundedBy</IRI>
+        <Literal>funded by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/fundedBy</IRI>
+        <Literal>archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/geekcode</IRI>
+        <Literal>A textual geekcode for this person, see http://www.geekcode.com/geek.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/geekcode</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/geekcode</IRI>
+        <Literal>geekcode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/geekcode</IRI>
+        <Literal>archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/gender</IRI>
+        <Literal>The gender of this Agent (typically but not necessarily &apos;male&apos; or &apos;female&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/gender</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/gender</IRI>
+        <Literal>gender</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/gender</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenName</IRI>
+        <Literal>The given name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenName</IRI>
+        <Literal>Given name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenName</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenname</IRI>
+        <Literal>The given name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenname</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenname</IRI>
+        <Literal>Given name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenname</IRI>
+        <Literal>archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/holdsAccount</IRI>
+        <Literal>Indicates an account held by this agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/holdsAccount</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/holdsAccount</IRI>
+        <Literal>account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/holdsAccount</IRI>
+        <Literal>archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/homepage</IRI>
+        <Literal>A homepage for some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/homepage</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/homepage</IRI>
+        <Literal>homepage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/homepage</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/icqChatID</IRI>
+        <Literal>An ICQ chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/icqChatID</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/icqChatID</IRI>
+        <Literal>ICQ chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/icqChatID</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/img</IRI>
+        <Literal>An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one&apos;s photo on a homepage).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/img</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/img</IRI>
+        <Literal>image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/img</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/interest</IRI>
+        <Literal>A page about a topic of interest to this person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/interest</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/interest</IRI>
+        <Literal>interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/interest</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/isPrimaryTopicOf</IRI>
+        <Literal>A document that this thing is the primary topic of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/isPrimaryTopicOf</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/isPrimaryTopicOf</IRI>
+        <Literal>is primary topic of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/isPrimaryTopicOf</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/jabberID</IRI>
+        <Literal>A jabber ID for something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/jabberID</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/jabberID</IRI>
+        <Literal>jabber ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/jabberID</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <Literal>A person known by this person (indicating some level of reciprocated interaction between the parties).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <Literal>knows</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/lastName</IRI>
+        <Literal>The last name of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/lastName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/lastName</IRI>
+        <Literal>lastName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/lastName</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/logo</IRI>
+        <Literal>A logo representing some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/logo</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/logo</IRI>
+        <Literal>logo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/logo</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/made</IRI>
+        <Literal>Something that was made by this agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/made</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/made</IRI>
+        <Literal>made</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/made</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/maker</IRI>
+        <Literal>An agent that  made this thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/maker</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/maker</IRI>
+        <Literal>maker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/maker</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/mbox</IRI>
+        <Literal>A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a &apos;static inverse functional property&apos;, in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/mbox</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/mbox</IRI>
+        <Literal>personal mailbox</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/mbox</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/mbox_sha1sum</IRI>
+        <Literal>The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the  first owner of the mailbox.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/mbox_sha1sum</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/mbox_sha1sum</IRI>
+        <Literal>sha1sum of a personal mailbox URI name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/mbox_sha1sum</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/member</IRI>
+        <Literal>Indicates a member of a Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/member</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/member</IRI>
+        <Literal>member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/member</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/membershipClass</IRI>
+        <Literal>Indicates the class of individuals that are a member of a Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/membershipClass</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/membershipClass</IRI>
+        <Literal>membershipClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/membershipClass</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/msnChatID</IRI>
+        <Literal>An MSN chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/msnChatID</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/msnChatID</IRI>
+        <Literal>MSN chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/msnChatID</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/myersBriggs</IRI>
+        <Literal>A Myers Briggs (MBTI) personality classification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/myersBriggs</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/myersBriggs</IRI>
+        <Literal>myersBriggs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/myersBriggs</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal>A name for some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal>name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <Literal>A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <Literal>nickname</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/openid</IRI>
+        <Literal>An OpenID for an Agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/openid</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/openid</IRI>
+        <Literal>openid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/openid</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/page</IRI>
+        <Literal>A page or document about this thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/page</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/page</IRI>
+        <Literal>page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/page</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/pastProject</IRI>
+        <Literal>A project this person has previously worked on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/pastProject</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/pastProject</IRI>
+        <Literal>past project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/pastProject</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/phone</IRI>
+        <Literal>A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/phone</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/phone</IRI>
+        <Literal>phone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/phone</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/plan</IRI>
+        <Literal>A .plan comment, in the tradition of finger and &apos;.plan&apos; files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/plan</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/plan</IRI>
+        <Literal>plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/plan</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/primaryTopic</IRI>
+        <Literal>The primary topic of some page or document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/primaryTopic</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/primaryTopic</IRI>
+        <Literal>primary topic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/primaryTopic</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/publications</IRI>
+        <Literal>A link to the publications of this person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/publications</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/publications</IRI>
+        <Literal>publications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/publications</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/schoolHomepage</IRI>
+        <Literal>A homepage of a school attended by the person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/schoolHomepage</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/schoolHomepage</IRI>
+        <Literal>schoolHomepage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/schoolHomepage</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/sha1</IRI>
+        <Literal>A sha1sum hash, in hex.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/sha1</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/sha1</IRI>
+        <Literal>sha1sum (hex)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/sha1</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/skypeID</IRI>
+        <Literal>A Skype ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/skypeID</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/skypeID</IRI>
+        <Literal>Skype ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/skypeID</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/status</IRI>
+        <Literal>A string expressing what the user is happy for the general public (normally) to know about their current activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/status</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/status</IRI>
+        <Literal>status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/status</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/surname</IRI>
+        <Literal>The surname of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/surname</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/surname</IRI>
+        <Literal>Surname</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/surname</IRI>
+        <Literal>archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/theme</IRI>
+        <Literal>A theme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/theme</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/theme</IRI>
+        <Literal>theme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/theme</IRI>
+        <Literal>archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/thumbnail</IRI>
+        <Literal>A derived thumbnail image.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/thumbnail</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/thumbnail</IRI>
+        <Literal>thumbnail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/thumbnail</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/tipjar</IRI>
+        <Literal>A tipjar document for this agent, describing means for payment and reward.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/tipjar</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/tipjar</IRI>
+        <Literal>tipjar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/tipjar</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/title</IRI>
+        <Literal>Title (Mr, Mrs, Ms, Dr. etc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/title</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/title</IRI>
+        <Literal>title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/title</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/topic</IRI>
+        <Literal>A topic of some page or document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/topic</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/topic</IRI>
+        <Literal>topic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/topic</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/topic_interest</IRI>
+        <Literal>A thing of interest to this person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/topic_interest</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/topic_interest</IRI>
+        <Literal>topic_interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/topic_interest</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/weblog</IRI>
+        <Literal>A weblog of some thing (whether person, group, company etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/weblog</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/weblog</IRI>
+        <Literal>weblog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/weblog</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/workInfoHomepage</IRI>
+        <Literal>A work info homepage of some person; a page about their work for some organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/workInfoHomepage</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/workInfoHomepage</IRI>
+        <Literal>work info homepage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/workInfoHomepage</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/workplaceHomepage</IRI>
+        <Literal>A workplace homepage of some person; the homepage of an organization they work for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/workplaceHomepage</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/workplaceHomepage</IRI>
+        <Literal>workplace homepage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/workplaceHomepage</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/yahooChatID</IRI>
+        <Literal>A Yahoo chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/yahooChatID</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/yahooChatID</IRI>
+        <Literal>Yahoo chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/yahooChatID</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
